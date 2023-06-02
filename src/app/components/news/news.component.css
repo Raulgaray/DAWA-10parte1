@@ -1,0 +1,11 @@
+.news-image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .news-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

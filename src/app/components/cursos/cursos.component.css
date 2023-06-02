@@ -1,0 +1,70 @@
+.card-img-top {
+    width: 225px;
+    height: 225px;
+  }
+  
+.neon-btn {
+position: relative;
+display: inline-block;
+padding: 12px 24px;
+color: #fff;
+text-decoration: none;
+font-weight: bold;
+border: none;
+border-radius: 30px;
+overflow: hidden;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+z-index: 1;
+}
+
+.blue {
+background: linear-gradient(45deg, #00f, #0ff, #00f);
+}
+
+.red {
+background: linear-gradient(45deg, #f00, #f0f, #f00);
+}
+
+.green {
+background: linear-gradient(45deg, #0f0, #0ff, #0f0);
+}
+
+.neon-btn:before,
+.neon-btn:after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+pointer-events: none;
+}
+
+.neon-btn:before {
+background: linear-gradient(45deg, #fff, #fff, #fff);
+z-index: -1;
+transition: opacity 0.5s;
+}
+
+.neon-btn:after {
+background: linear-gradient(45deg, #fff, #fff, #fff);
+z-index: -2;
+transition: opacity 0.5s;
+}
+
+.neon-btn:hover:before,
+.neon-btn:hover:after {
+opacity: 1;
+}
+
+.image-hover {
+    transition: transform 0.3s;
+  }
+  
+  .image-hover:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  
